@@ -1,6 +1,6 @@
-dependency installed 
+library installed 
 
-mongoose , express , dotenv , nodemon , prettier , cookie-parser , cors
+mongoose , express , dotenv , nodemon , prettier , cookie-parser , cors , bcrypt , jsonwebtoken
 
 
 ----APIs status codes----
