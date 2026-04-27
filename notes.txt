@@ -1,6 +1,6 @@
 library installed 
 
-mongoose , express , dotenv , nodemon , prettier , cookie-parser , cors , bcrypt , jsonwebtoken
+mongoose , express , dotenv , nodemon , prettier , cookie-parser , cors , bcrypt , jsonwebtoken , cloudinary , multer
 
 
 ----APIs status codes----
@@ -10,3 +10,5 @@ mongoose , express , dotenv , nodemon , prettier , cookie-parser , cors , bcrypt
 3. Redirection messages (300-399)
 4. Client error responses (400-499)
 5. Server error responses (500-599)
+
+----Using cloudinary website for image and video upload----

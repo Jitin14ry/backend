@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cros";
+import cors from "cors";
 import cookieParser from "cookie-parser";
 
 // app.use tab use krnge jab koi middleware ya configurations setting krni h
@@ -19,4 +19,12 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public"));
 app.use(cookieParser());
 
-export { app };
+// routes import
+
+import userRouter from "../routes/user.routes.js"; // we can only give any import name here only if the method have .. export default method
+
+app.use("/api/v1/users", userRouter);
+
+// sp the url will looks like http://localhost:8000/api/v1/users/register in frontend
+
+export default app;
