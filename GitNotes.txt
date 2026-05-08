@@ -1,0 +1,45 @@
+ls(MAC/Linux) , dir(Windows) : check files in current folder
+ls -Force : Show hidden files
+
+git log : This shows all commits 
+git log --oneline : This only shows needed information like commit message , number
+
+git config --global core.editor "code --wait" : run this command it will prevent to open by default vim and open file
+
+.gitIgnore file : In this we write those files name which we don't want to push
+
+.gitKeep file : We can create this in that folder which have nothing but still we want to push that folder
+
+git switch/checkout <branch_name> : To go to another branch
+
+git merge <branch_name> : Merge other branch to current
+
+git merge --abort : To abort the merge
+
+git branch -m <old_b_name> <new_branch_name> : To rename a branch
+
+git branch -d <branch_name> : To delete a branch
+
+git branch : List all branches
+
+git diff <branch-name-one> <branch-name-two> / git diff branch-name-one..branch-name-two / git diff <commit-hash-one> <commit-hash-two>
+
+git stash : If we need to switch to another branch from our current working branch which have changes
+
+git stash save "work in progress on X feature" : Also give a message
+
+git stash list : List all the stashes
+
+git stash apply : If you need back the stashed work in branch
+
+git stash apply stash@{0} : If you need back the stashed work in branch (stash@{0} is the name of the stash)
+
+git stash pop : You can apply and drop the stash by using this
+
+git stash drop : You can drop the stash by using this
+
+git stash apply stash@{0} <branch-name> : You can apply the stash to a specific branch by using this
+
+git stash clear
+
+git rebase <branch_name> : rebase the sub branch from main branches . This prevents the merge commit message

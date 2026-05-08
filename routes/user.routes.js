@@ -30,5 +30,6 @@ router.route("/login").post(loginUser);
 
 router.route("/logout").post(verifyJWT, logoutUser);
 router.route("/refreshToken").post(refreshAccessToken);
+router.route("/change-password").post(verifyJWT, changeCurrentPassword)
 
 export default router;
